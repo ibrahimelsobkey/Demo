@@ -40,5 +40,10 @@ public class StudentsController {
     return studentsService.findAll();
   }
   
+  @RequestMapping(value = "/getStudentsId", method = RequestMethod.GET)
+  @ResponseStatus(HttpStatus.OK)
+  public Mono<Students> getStudents(String Id) {
+    return studentsService.findById(10);
+  }
   
 }

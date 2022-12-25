@@ -30,10 +30,10 @@ public class Results{
   @Id
   @Min(value = 1, message = "Required min Roll Number is 1")
   @Max(value = 100, message = "Required max Roll Number is 100")
-  private String rollNumber;
+  private int rollNumber;
   @Min(value = 1, message = "Required min Grade is 1")
   @Max(value = 100, message = "Required max Grade is 10")
-  private String grade;
+  private int grade;
   private String remarks;
   private String positionInClass;
   @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
@@ -41,12 +41,12 @@ public class Results{
   @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
   private String updatedOn;
   
-	
 	/*
-	 * @DocumentReference(lazy = false)
+	 * @DocumentReference(lazy = true, lookup = "{ 'results' : ?#{#self._id} }")
 	 * 
 	 * @ReadOnlyProperty private Students students;
 	 */
+	 
 	 
 
 }

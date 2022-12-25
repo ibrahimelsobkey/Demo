@@ -23,30 +23,26 @@ public class ResultsService implements IResultsService {
 
 	@Override
 	public Mono<Results> findById(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		return resultsRepository.findById(id);
 	}
 
 	@Override
 	public Flux<Results> findByName(String name) {
-		// TODO Auto-generated method stub
-		return null;
+		return resultsRepository.findByName(name);
 	}
 
 	@Override
 	public Flux<Results> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return resultsRepository.findAll();
 	}
 
 	@Override
 	public Mono<Results> update(Results e) {
-		// TODO Auto-generated method stub
-		return null;
+		return resultsRepository.save(e);
 	}
 
 	@Override
 	public Mono<Void> delete(Integer id) {
-		// TODO Auto-generated method stub
 		return null;
-	}}
+	}
+	}
