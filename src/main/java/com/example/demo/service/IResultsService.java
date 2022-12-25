@@ -11,13 +11,13 @@ public interface IResultsService
 {
   void create(Results e);
    
-  Mono<Students> findById(Integer id);
+  Mono<Results> findById(Integer id);
  
-  Flux<Students> findByName(String name);
+  Flux<Results> findByName(String name);
  
-  Flux<Students> findAll();
+  Flux<Results> findAll();
  
-  Mono<Students> update(Results e);
+  Mono<Results> update(Results e);
  
   Mono<Void> delete(Integer id);
 }

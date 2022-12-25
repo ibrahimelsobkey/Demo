@@ -9,6 +9,8 @@ import reactor.core.publisher.Flux;
 
 public interface StudentsRepository extends ReactiveMongoRepository<Students, Integer> {
 
-	  @Query("{ 'name': ?0 }")
-	  Flux<Students> findByName(final String name);
+	  @Query("{ 'rollNumber': ?0 }")
+	  Flux<Students> findByName(final String rollNumber);
+	  
+	  
 	}

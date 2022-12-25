@@ -22,25 +22,25 @@ public class ResultsService implements IResultsService {
 	}
 
 	@Override
-	public Mono<Students> findById(Integer id) {
+	public Mono<Results> findById(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Flux<Students> findByName(String name) {
+	public Flux<Results> findByName(String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Flux<Students> findAll() {
+	public Flux<Results> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Mono<Students> update(Results e) {
+	public Mono<Results> update(Results e) {
 		// TODO Auto-generated method stub
 		return null;
 	}
